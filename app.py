@@ -1,11 +1,11 @@
-from flask import Flask, jsonify, request
+from flask import Flask,jsonify,request,render_template
 import ipl
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello world'
+    return render_template('index.html')
 
 @app.route('/api/teams')
 def teams():

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IPL Analytics API</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        🏏 IPL Analytics API
+    </div>
+
+    <a href="https://github.com/yashbsl/IPL-ANALYTICS-API"
+       target="_blank"
+       class="github-btn">
+        GitHub
+    </a>
+
+</nav>
+
+
+<section class="hero">
+
+    <div class="left">
+
+        <div class="badge">
+            🚀 REST API • Version 1.0
+        </div>
+
+        <h1>
+            IPL <span>Analytics API</span>
+        </h1>
+
+        <p>
+            Production-ready REST API for exploring IPL teams,
+            head-to-head records and player match history using
+            real IPL datasets.
+        </p>
+
+        <div class="status">
+            🟢 API Status: Operational
+        </div>
+
+        <div class="buttons">
+
+            <a href="#endpoints" class="primary-btn">
+                Explore Endpoints
+            </a>
+
+            <a href="https://github.com/yashbsl/IPL-ANALYTICS-API"
+               target="_blank"
+               class="secondary-btn">
+                View Source
+            </a>
+
+        </div>
+
+        <div class="features">
+
+            <div class="feature-box">
+                ⚡
+                <h3>Fast</h3>
+                <p>Optimized APIs with quick response times.</p>
+            </div>
+
+            <div class="feature-box">
+                🔒
+                <h3>Reliable</h3>
+                <p>Production-ready REST APIs built using Flask.</p>
+            </div>
+
+            <div class="feature-box">
+                📊
+                <h3>Real Data</h3>
+                <p>Uses real IPL match datasets for analytics.</p>
+            </div>
+
+            <div class="feature-box">
+                🚀
+                <h3>Easy to Use</h3>
+                <p>Simple endpoints with JSON responses.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <img src="{{ url_for('static',
+                             filename='images/batsman.png') }}">
+
+    </div>
+
+</section>
+
+
+<section id="endpoints">
+
+    <h2>⚡ Available Endpoints</h2>
+
+    <p class="sub">
+        Simple, powerful and easy-to-use endpoints for IPL analytics.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <span class="get">GET</span>
+
+            <h3>/api/teams</h3>
+
+            <p>
+                Retrieve all IPL teams available in the dataset.
+            </p>
+
+            <a href="/api/teams"
+               target="_blank"
+               class="api-btn">
+                Try API →
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <span class="get">GET</span>
+
+            <h3>/api/teamvteam</h3>
+
+            <p>
+                Compare head-to-head statistics between any two IPL teams.
+            </p>
+
+            <a href="/api/teamvteam?team1=Royal Challengers Bangalore&team2=Chennai Super Kings"
+               target="_blank"
+               class="api-btn">
+                Try API →
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <span class="get">GET</span>
+
+            <h3>/api/playermatches</h3>
+
+            <p>
+                Retrieve complete match history of any IPL player.
+            </p>
+
+            <a href="/api/playermatches?player=V Kohli"
+               target="_blank"
+               class="api-btn">
+                Try API →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    Built with ❤️ using Python, Flask, Pandas & NumPy
+
+    <br><br>
+
+    © 2026 Yash Bansal
+
+</footer>
+
+</body>
+</html>
